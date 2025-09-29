@@ -3,68 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operations Excellence Consulting - Manufacturing & Supply Chain Optimization</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>HumchumCo - Operations & Manufacturing Excellence</title>
     <style>
-        :root {
-            --color-deep: #161d39;
-            --color-primary: #3149ff;
-            --color-secondary: #6c63ff;
-            --color-accent: #ff6b6b;
-            --color-light: #f5f7ff;
-            --color-muted: rgba(255, 255, 255, 0.6);
-            --shadow-soft: 0 18px 40px rgba(18, 27, 73, 0.15);
-            --shadow-glow: 0 20px 60px rgba(60, 92, 255, 0.25);
-            --radius-card: 22px;
-        }
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        html {
-            scroll-behavior: smooth;
-            background: var(--color-deep);
-        }
-
+        
         body {
-            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #333;
-            overflow-x: hidden;
-            background: radial-gradient(circle at 20% 20%, rgba(108, 99, 255, 0.18), transparent 55%),
-                        radial-gradient(circle at 80% 0%, rgba(255, 107, 107, 0.12), transparent 60%),
-                        linear-gradient(160deg, #f9fbff 0%, #f1f4ff 45%, #f7f0ff 100%);
-            color: #1c2143;
+            color: #2d3748;
+            background-color: #ffffff;
         }
-
+        
         .container {
-            max-width: 1200px;
+            max-width: 1140px;
             margin: 0 auto;
             padding: 0 20px;
-        }
-
-        section {
-            position: relative;
         }
         
         /* Header */
         header {
-            background: rgba(22, 29, 57, 0.9);
-            color: white;
-            padding: 1.2rem 0;
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e2e8f0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-            box-shadow: 0 22px 60px rgba(11, 17, 43, 0.35);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-
+        
         nav {
             display: flex;
             justify-content: space-between;
@@ -72,14 +43,9 @@
         }
         
         .logo {
-            font-size: 1.9rem;
+            font-size: 1.75rem;
             font-weight: 700;
-            letter-spacing: 1.5px;
-            background: linear-gradient(120deg, #ffffff, #a9b7ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-transform: uppercase;
+            color: #1a365d;
         }
         
         .nav-links {
@@ -87,484 +53,373 @@
             list-style: none;
             gap: 2rem;
         }
-
+        
         .nav-links a {
-            color: rgba(255, 255, 255, 0.85);
+            color: #4a5568;
             text-decoration: none;
-            transition: all 0.3s ease;
-            position: relative;
-            padding: 0.35rem 0;
             font-weight: 500;
-            letter-spacing: 0.5px;
+            transition: color 0.2s ease;
         }
-
+        
         .nav-links a:hover {
-            color: #ffffff;
-            transform: translateY(-2px);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: -6px;
-            left: 0;
-            background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.6), rgba(255,255,255,0));
-            transform: scaleX(0);
-            transform-origin: center;
-            transition: transform 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            transform: scaleX(1);
+            color: #2b6cb0;
         }
         
         /* Hero Section */
         .hero {
-            background: radial-gradient(circle at 15% 20%, rgba(81, 115, 255, 0.95), rgba(118, 75, 162, 0.95)),
-                        linear-gradient(120deg, rgba(32, 42, 99, 0.9), rgba(57, 78, 179, 0.65));
-            color: white;
-            padding: 180px 0 140px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            min-height: 90vh;
-            display: flex;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            padding: 120px 0 80px;
+            text-align: left;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
             align-items: center;
         }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="rgba(255,255,255,0.4)"/><stop offset="100%" stop-color="rgba(255,255,255,0.05)"/></linearGradient></defs><path d="M0 0H400V400H0z" fill="url(%23grad)" opacity="0.15"/><circle cx="50" cy="320" r="120" fill="rgba(255,255,255,0.08)"/><circle cx="360" cy="80" r="90" fill="rgba(255,255,255,0.12)"/></svg>');
-            background-size: cover;
-            opacity: 0.35;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            width: 420px;
-            height: 420px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.18) 0%, rgba(255,255,255,0) 65%);
-            filter: blur(0);
-            top: -160px;
-            right: -120px;
-            border-radius: 50%;
-            opacity: 0.5;
-            animation: float 8s ease-in-out infinite;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 720px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-size: clamp(2.8rem, 5vw, 4rem);
+        
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #1a365d;
             margin-bottom: 1.5rem;
-            animation: fadeInUp 1s ease;
-            letter-spacing: 1px;
-            font-weight: 700;
+            line-height: 1.2;
         }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2.5rem;
-            opacity: 0.92;
-            animation: fadeInUp 1s ease 0.3s both;
-            font-weight: 400;
+        
+        .hero-text p {
+            font-size: 1.25rem;
+            color: #4a5568;
+            margin-bottom: 2rem;
+            line-height: 1.6;
         }
-
-        .hero-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            justify-content: center;
-            margin-bottom: 2.5rem;
-        }
-
-        .hero-tags span {
-            padding: 0.55rem 1.2rem;
-            border-radius: 999px;
-            background: rgba(255, 255, 255, 0.14);
-            border: 1px solid rgba(255,255,255,0.25);
-            color: rgba(255,255,255,0.9);
-            font-size: 0.85rem;
-            letter-spacing: 0.5px;
-            backdrop-filter: blur(12px);
-            box-shadow: 0 10px 25px rgba(14, 26, 76, 0.25);
-            animation: fadeInUp 0.9s ease 0.5s both;
-        }
-
+        
         .cta-button {
             display: inline-block;
-            background: linear-gradient(120deg, #ff8f70, #ff3d7f);
+            background: #2b6cb0;
             color: white;
-            padding: 16px 44px;
+            padding: 14px 28px;
             text-decoration: none;
-            border-radius: 999px;
+            border-radius: 6px;
             font-weight: 600;
-            letter-spacing: 0.6px;
-            transition: all 0.35s ease;
-            box-shadow: var(--shadow-glow);
-            animation: fadeInUp 1s ease 0.6s both;
+            transition: all 0.2s ease;
         }
-
+        
         .cta-button:hover {
-            transform: translateY(-4px) scale(1.01);
-            box-shadow: 0 28px 60px rgba(255, 61, 127, 0.35);
+            background: #2c5aa0;
+            transform: translateY(-1px);
+        }
+        
+        .hero-stats {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .stat-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2b6cb0;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #4a5568;
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .about-text h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-text p {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .credentials {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #2b6cb0;
+        }
+        
+        .credentials h4 {
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .credentials p {
+            color: #4a5568;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
         }
         
         /* Services Section */
         .services {
-            padding: 120px 0;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(243, 245, 255, 0.95) 100%);
-        }
-
-        .services::before {
-            content: '';
-            position: absolute;
-            inset: 60px 5% auto 5%;
-            height: 60%;
-            background: rgba(255, 255, 255, 0.72);
-            border-radius: 40px;
-            z-index: 0;
-            box-shadow: 0 30px 80px rgba(56, 72, 163, 0.08);
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: clamp(2.3rem, 4vw, 2.8rem);
-            margin-bottom: 3.5rem;
-            color: #111a3c;
-            position: relative;
-            z-index: 1;
-            font-weight: 600;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 86px;
-            height: 4px;
-            margin: 18px auto 0;
-            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-            border-radius: 999px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.2rem;
-            margin-top: 3.5rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .service-card {
-            background: #ffffff;
-            padding: 2.4rem;
-            border-radius: var(--radius-card);
-            box-shadow: var(--shadow-soft);
-            transition: all 0.35s ease;
-            border: 1px solid rgba(115, 132, 255, 0.15);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card::after {
-            content: '';
-            position: absolute;
-            inset: -30% 50% auto -30%;
-            height: 120%;
-            background: linear-gradient(120deg, rgba(49, 73, 255, 0.18), rgba(108, 99, 255, 0));
-            transform: rotate(15deg);
-            transition: opacity 0.4s ease;
-            opacity: 0;
-        }
-
-        .service-card:hover {
-            transform: translateY(-16px);
-            box-shadow: 0 30px 80px rgba(26, 45, 94, 0.18);
-        }
-
-        .service-card:hover::after {
-            opacity: 1;
-        }
-
-        .service-card h3 {
-            color: #1f2b5c;
-            margin-bottom: 1.4rem;
-            font-size: 1.55rem;
-            font-weight: 600;
-        }
-
-        .service-card ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .service-card li {
-            padding: 0.45rem 0;
-            position: relative;
-            padding-left: 1.9rem;
-            font-size: 0.98rem;
-            color: #4c5476;
-        }
-
-        .service-card li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--color-primary);
-            font-weight: 600;
+            padding: 80px 0;
+            background: #f8fafc;
         }
         
-        /* Results Section */
-        .results {
-            padding: 130px 0;
-            background: linear-gradient(135deg, rgba(25, 30, 70, 0.98), rgba(41, 56, 135, 0.88));
-            color: white;
-        }
-
-        .results .section-title {
-            color: #f5f7ff;
-        }
-
-        .results .section-title::after {
-            background: linear-gradient(90deg, rgba(255,255,255,0.3), rgba(120, 150, 255, 0.9));
-        }
-
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 2.4rem;
+        .section-header {
             text-align: center;
-            margin-top: 3.5rem;
+            margin-bottom: 4rem;
         }
-
-        .result-item {
-            padding: 2.6rem 2rem;
-            border-radius: var(--radius-card);
-            background: rgba(255,255,255,0.08);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255,255,255,0.18);
-            transition: all 0.35s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .result-item::after {
-            content: '';
-            position: absolute;
-            inset: -40% -20% auto;
-            height: 120%;
-            background: linear-gradient(150deg, rgba(255,255,255,0.25), rgba(255,255,255,0));
-            transform: rotate(12deg);
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .result-item:hover {
-            transform: translateY(-12px);
-            background: rgba(255,255,255,0.12);
-            box-shadow: 0 26px 70px rgba(12, 20, 53, 0.45);
-        }
-
-        .result-item:hover::after {
-            opacity: 0.7;
-        }
-
-        .result-number {
-            font-size: 3.2rem;
+        
+        .section-header h2 {
+            font-size: 2.25rem;
             font-weight: 700;
-            color: #8ad0ff;
-            display: block;
-            letter-spacing: 1.2px;
-        }
-
-        /* Experience Section */
-        .experience {
-            padding: 130px 0;
-            background: linear-gradient(160deg, rgba(249, 250, 255, 0.95) 0%, rgba(235, 238, 255, 0.95) 100%);
-        }
-
-        .experience-content {
-            color: #1e274f;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 3rem;
-            align-items: start;
-        }
-
-        .experience-content > div {
-            background: #ffffff;
-            padding: 2.4rem;
-            border-radius: var(--radius-card);
-            box-shadow: var(--shadow-soft);
-            border: 1px solid rgba(115, 132, 255, 0.14);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .experience-content > div::after {
-            content: '';
-            position: absolute;
-            inset: auto -40% -40% auto;
-            width: 60%;
-            height: 60%;
-            background: linear-gradient(135deg, rgba(49,73,255,0.18), rgba(108,99,255,0));
-            transform: rotate(18deg);
-            opacity: 0.6;
-            pointer-events: none;
-        }
-
-        .company-highlight {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 2.4rem;
-            margin: 0;
-            border-radius: var(--radius-card);
-            backdrop-filter: none;
-            border: none;
-        }
-
-        .company-highlight h3 {
-            color: var(--color-primary);
+            color: #1a365d;
             margin-bottom: 1rem;
         }
         
-        .achievement {
-            margin: 1.1rem 0;
-            padding: 1.2rem 1.4rem;
-            background: rgba(49, 73, 255, 0.05);
-            border-radius: 14px;
-            border-left: 4px solid rgba(49, 73, 255, 0.55);
-            color: #3a4270;
-            box-shadow: inset 0 0 0 1px rgba(49, 73, 255, 0.08);
+        .section-header p {
+            font-size: 1.1rem;
+            color: #4a5568;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s ease;
+        }
+        
+        .service-card:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        
+        .service-card h3 {
+            color: #1a365d;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .service-card li {
+            padding: 0.5rem 0;
+            color: #4a5568;
+            position: relative;
+            padding-left: 1.25rem;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        .service-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .service-card li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #2b6cb0;
+            font-weight: bold;
+        }
+        
+        /* Case Studies Section */
+        .case-studies {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .case-study {
+            background: #f8fafc;
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid #2b6cb0;
+        }
+        
+        .case-study h3 {
+            color: #1a365d;
+            margin-bottom: 1rem;
+            font-size: 1.35rem;
+        }
+        
+        .case-study-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        
+        .case-details p {
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+        
+        .case-metrics {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .metric {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .metric:last-child {
+            margin-bottom: 0;
+        }
+        
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2b6cb0;
+            display: block;
+        }
+        
+        .metric-label {
+            font-size: 0.85rem;
+            color: #4a5568;
+            margin-top: 0.25rem;
         }
         
         /* Contact Section */
         .contact {
-            padding: 130px 0;
-            background: linear-gradient(160deg, rgba(25, 30, 70, 0.98), rgba(57, 78, 179, 0.85));
+            padding: 80px 0;
+            background: #1a365d;
             color: white;
-            text-align: center;
         }
-
-        .contact p {
-            color: rgba(228, 234, 255, 0.85);
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
         }
-
+        
+        .contact-info h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-details {
+            list-style: none;
+        }
+        
+        .contact-details li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-details strong {
+            width: 100px;
+            display: inline-block;
+        }
+        
         .contact-form {
-            max-width: 620px;
-            margin: 3.5rem auto;
-            background: rgba(255,255,255,0.08);
-            padding: 2.6rem;
-            border-radius: var(--radius-card);
-            backdrop-filter: blur(22px);
-            border: 1px solid rgba(255,255,255,0.16);
-            box-shadow: 0 24px 70px rgba(8, 11, 34, 0.35);
-            text-align: left;
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
         }
-
+        
         .form-group {
-            margin: 1.6rem 0;
+            margin-bottom: 1.5rem;
         }
-
+        
         .form-group label {
             display: block;
-            margin-bottom: 0.55rem;
-            color: rgba(228, 234, 255, 0.9);
-            font-size: 0.95rem;
-            letter-spacing: 0.3px;
+            margin-bottom: 0.5rem;
+            color: #e2e8f0;
+            font-weight: 500;
         }
-
+        
         .form-group input,
         .form-group textarea {
             width: 100%;
-            padding: 1rem 1.1rem;
-            border: 1px solid rgba(156, 173, 255, 0.25);
-            border-radius: 12px;
-            background: rgba(255,255,255,0.9);
-            color: #1c2143;
-            transition: all 0.3s ease;
-            font-size: 0.98rem;
+            padding: 0.75rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 6px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 1rem;
         }
-
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+        
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            box-shadow: 0 0 0 4px rgba(97, 126, 255, 0.18);
-            border-color: rgba(97, 126, 255, 0.6);
+            border-color: #2b6cb0;
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
         }
-
+        
         .submit-btn {
-            background: linear-gradient(120deg, #ff8f70, #ff3d7f);
+            background: #2b6cb0;
             color: white;
-            padding: 16px 40px;
+            padding: 12px 24px;
             border: none;
-            border-radius: 999px;
+            border-radius: 6px;
             cursor: pointer;
             font-weight: 600;
-            transition: all 0.35s ease;
-            box-shadow: 0 24px 50px rgba(255, 61, 127, 0.35);
-            letter-spacing: 0.6px;
+            font-size: 1rem;
+            transition: all 0.2s ease;
         }
-
+        
         .submit-btn:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 28px 70px rgba(255, 61, 127, 0.4);
+            background: #2c5aa0;
+            transform: translateY(-1px);
         }
         
         /* Footer */
         footer {
-            background: rgba(13, 18, 41, 0.95);
-            color: rgba(232, 236, 255, 0.8);
+            background: #2d3748;
+            color: #a0aec0;
             text-align: center;
-            padding: 2.4rem 0;
-            border-top: 1px solid rgba(255,255,255,0.08);
-            font-size: 0.92rem;
-            letter-spacing: 0.3px;
-        }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translate3d(0, 0, 0) scale(1);
-            }
-            50% {
-                transform: translate3d(0, 18px, 0) scale(1.03);
-            }
-        }
-        
-        .fade-in {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s ease;
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+            padding: 2rem 0;
         }
         
         /* Mobile Responsiveness */
@@ -573,48 +428,26 @@
                 display: none;
             }
             
-            .hero h1 {
-                font-size: 2.3rem;
+            .hero-content,
+            .about-content,
+            .contact-content,
+            .case-study-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
             
-            .hero {
-                padding: 160px 0 120px;
+            .hero-text h1 {
+                font-size: 2.25rem;
             }
-
-            .hero::after {
-                display: none;
-            }
-
-            .hero-tags span {
-                font-size: 0.78rem;
-                padding: 0.5rem 1rem;
-            }
-
-            .services::before {
-                display: none;
-            }
-
-            .services-grid,
-            .experience-content {
+            
+            .services-grid {
                 grid-template-columns: 1fr;
             }
-
-            .results-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .contact-form {
-                padding: 2rem;
-            }
-        }
-
-        @media (max-width: 540px) {
-            .results-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero {
-                min-height: auto;
+            
+            .section-header h2,
+            .about-text h2,
+            .contact-info h2 {
+                font-size: 1.875rem;
             }
         }
     </style>
@@ -622,12 +455,12 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">OpEx Consulting</div>
+            <div class="logo">HumchumCo</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#results">Results</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -636,164 +469,185 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Transform Your Operations</h1>
-                <p>Expert Manufacturing & Supply Chain Consulting | Lean Six Sigma | Digital Transformation</p>
-                <div class="hero-tags">
-                    <span>Lean Six Sigma Master Black Belt</span>
-                    <span>40+ Manufacturing Plants Optimized</span>
-                    <span>Industry 4.0 &amp; Digital Twin Programs</span>
-                    <span>Global Supply Chain Resilience</span>
+                <div class="hero-text">
+                    <h1>Manufacturing Excellence Through Data-Driven Solutions</h1>
+                    <p>We partner with manufacturing companies to optimize operations, reduce costs, and drive sustainable growth through proven lean methodologies and digital transformation.</p>
+                    <a href="#contact" class="cta-button">Schedule Consultation</a>
                 </div>
-                <a href="#contact" class="cta-button">Start Your Transformation</a>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">₹100+ Cr</span>
+                        <div class="stat-label">Cost savings delivered</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8%</span>
+                        <div class="stat-label">Average OEE improvement</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <div class="stat-label">Production lines optimized</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <div class="stat-label">Years of experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="credentials">
+                    <h4>Education & Certifications</h4>
+                    <p>Manufacturing Management - IIM (NITIE Mumbai)</p>
+                    <p>Lean Six Sigma Green Belt Certified</p>
+                    <p>Project Management & Agile Methodologies</p>
+                    <p>Advanced Analytics & AI Applications</p>
+                    
+                    <h4 style="margin-top: 1.5rem;">Industry Focus</h4>
+                    <p>FMCG & Packaging</p>
+                    <p>Automotive Components</p>
+                    <p>Process Industries</p>
+                    <p>Consumer Goods</p>
+                </div>
+                <div class="about-text">
+                    <h2>Transforming Operations Through Strategic Excellence</h2>
+                    <p>With over 15 years of hands-on experience in manufacturing operations, I specialize in driving measurable improvements in productivity, quality, and cost efficiency for mid to large-scale manufacturing companies.</p>
+                    
+                    <p>My approach combines proven lean methodologies with modern digital tools to create sustainable operational excellence. I've successfully led enterprise-wide transformations at companies like Ashirvad (Aliaxis) and Manjushree Technopack, delivering significant EBITDA improvements and establishing self-sustaining improvement cultures.</p>
+                    
+                    <p>I work closely with plant leadership, cross-functional teams, and C-level executives to align operational initiatives with strategic business objectives, ensuring both immediate impact and long-term sustainability.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Core Consulting Services</h2>
+            <div class="section-header">
+                <h2>Core Consulting Services</h2>
+                <p>Comprehensive solutions designed to address your most critical operational challenges</p>
+            </div>
             
             <div class="services-grid">
-                <div class="service-card fade-in">
-                    <h3>Operational Excellence & Lean Transformation</h3>
+                <div class="service-card">
+                    <h3>Operational Excellence & Lean Implementation</h3>
                     <ul>
-                        <li>Lean Six Sigma implementation (DMAIC methodology)</li>
-                        <li>Value Stream Mapping (VSM) and waste elimination</li>
-                        <li>TPM (Total Productive Maintenance) deployment</li>
-                        <li>OEE improvement and capacity optimization</li>
-                        <li>Kaizen events and continuous improvement culture</li>
-                        <li>5S implementation and workplace organization</li>
+                        <li>Enterprise-wide Lean Six Sigma deployment</li>
+                        <li>Value Stream Mapping and process optimization</li>
+                        <li>Total Productive Maintenance (TPM) programs</li>
+                        <li>Overall Equipment Effectiveness (OEE) improvement</li>
+                        <li>Continuous improvement culture development</li>
+                        <li>Self-managed team implementation</li>
                     </ul>
                 </div>
                 
-                <div class="service-card fade-in">
+                <div class="service-card">
                     <h3>Digital Manufacturing & Industry 4.0</h3>
                     <ul>
-                        <li>MES (Manufacturing Execution System) implementation</li>
-                        <li>IoT integration and smart manufacturing</li>
-                        <li>Industrial automation and low-cost automation</li>
-                        <li>AI/ML applications in operations</li>
+                        <li>Manufacturing Execution System (MES) implementation</li>
+                        <li>Industrial IoT integration and data analytics</li>
                         <li>Predictive maintenance systems</li>
-                        <li>Real-time dashboards and KPI monitoring</li>
+                        <li>Low-cost automation solutions</li>
+                        <li>Real-time KPI dashboards and reporting</li>
+                        <li>AI/ML applications for quality and yield improvement</li>
                     </ul>
                 </div>
                 
-                <div class="service-card fade-in">
-                    <h3>Supply Chain & S&OP Optimization</h3>
+                <div class="service-card">
+                    <h3>Supply Chain & Planning Optimization</h3>
                     <ul>
                         <li>Sales & Operations Planning (S&OP) design</li>
                         <li>Demand forecasting and inventory optimization</li>
-                        <li>Supplier management and strategic procurement</li>
+                        <li>Strategic procurement and supplier development</li>
                         <li>Network optimization and logistics cost reduction</li>
-                        <li>Make-to-Stock/Make-to-Order strategy</li>
-                        <li>OTIF (On-Time In-Full) improvement</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <h3>Cost Engineering & Financial Excellence</h3>
-                    <ul>
-                        <li>Cost-to-Serve analysis and optimization</li>
-                        <li>SKU rationalization and profitability analysis</li>
-                        <li>Budget management and variance control</li>
-                        <li>ROI-based business case development</li>
                         <li>Working capital optimization</li>
+                        <li>End-to-end supply chain visibility</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Cost Engineering & Financial Performance</h3>
+                    <ul>
+                        <li>SKU-level profitability analysis</li>
+                        <li>Cost-to-serve optimization</li>
+                        <li>Budget planning and variance control</li>
+                        <li>Capital expenditure evaluation</li>
                         <li>Energy cost reduction strategies</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <h3>Quality Systems & Risk Management</h3>
-                    <ul>
-                        <li>FMEA (Failure Mode & Effects Analysis)</li>
-                        <li>Statistical Process Control (SPC)</li>
-                        <li>Poka-yoke and mistake-proofing systems</li>
-                        <li>Quality management system design</li>
-                        <li>Supplier quality improvement</li>
-                        <li>Risk assessment and mitigation strategies</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <h3>Organizational Development</h3>
-                    <ul>
-                        <li>Self-Managed Teams (SMT) implementation</li>
-                        <li>Hoshin Kanri strategic deployment</li>
-                        <li>Capability building and training programs</li>
-                        <li>Performance management systems</li>
-                        <li>Change management and culture transformation</li>
-                        <li>Leadership development for operations</li>
+                        <li>Material cost optimization programs</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="results" class="results">
+    <section id="case-studies" class="case-studies">
         <div class="container">
-            <h2 class="section-title">Proven Results</h2>
-            <div class="results-grid">
-                <div class="result-item fade-in">
-                    <span class="result-number">₹100+ Cr</span>
-                    <p>Total Cost Savings Delivered</p>
-                </div>
-                <div class="result-item fade-in">
-                    <span class="result-number">8%</span>
-                    <p>Average OEE Improvement</p>
-                </div>
-                <div class="result-item fade-in">
-                    <span class="result-number">30%</span>
-                    <p>Reduction in Management Losses</p>
-                </div>
-                <div class="result-item fade-in">
-                    <span class="result-number">100+</span>
-                    <p>Manufacturing Lines Optimized</p>
-                </div>
-                <div class="result-item fade-in">
-                    <span class="result-number">300%</span>
-                    <p>Scrap Reduction Achieved</p>
-                </div>
-                <div class="result-item fade-in">
-                    <span class="result-number">200+</span>
-                    <p>Operations Staff Trained</p>
+            <div class="section-header">
+                <h2>Client Success Stories</h2>
+                <p>Real results from recent manufacturing transformation projects</p>
+            </div>
+            
+            <div class="case-study">
+                <h3>Enterprise Lean Transformation - Ashirvad by Aliaxis</h3>
+                <div class="case-study-content">
+                    <div class="case-details">
+                        <p><strong>Challenge:</strong> Multi-plant manufacturing company needed to improve operational efficiency, reduce costs, and establish sustainable continuous improvement practices across their operations.</p>
+                        
+                        <p><strong>Solution:</strong> Led comprehensive lean transformation including MES-IoT implementation across 100+ production lines, established self-managed teams, deployed TPM practices, and created robust governance frameworks.</p>
+                        
+                        <p><strong>Approach:</strong> Conducted current state mapping, implemented pilot programs, scaled successful initiatives, and built internal capability through extensive training programs for 200+ operations staff.</p>
+                    </div>
+                    <div class="case-metrics">
+                        <div class="metric">
+                            <span class="metric-value">₹20 Cr</span>
+                            <div class="metric-label">Business impact achieved</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">8%</span>
+                            <div class="metric-label">OEE improvement</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">₹13 Cr</span>
+                            <div class="metric-label">Automation savings</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">2%</span>
+                            <div class="metric-label">Total cost reduction</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Industry Experience</h2>
-            <div class="experience-content">
-                <div class="company-highlight fade-in">
-                    <h3>Ashirvad by Aliaxis - Enterprise Lean Transformation</h3>
-                    <div class="achievement">
-                        <strong>Digital Manufacturing Leadership:</strong> Led MES-IoT implementation across 100+ lines, achieving 8% OEE improvement and ₹20 Cr business impact
+            
+            <div class="case-study">
+                <h3>Production Excellence Program - Manjushree Technopack</h3>
+                <div class="case-study-content">
+                    <div class="case-details">
+                        <p><strong>Challenge:</strong> Large packaging manufacturer with 2500+ SKUs needed to improve throughput, reduce waste, and optimize resource utilization across multiple production facilities.</p>
+                        
+                        <p><strong>Solution:</strong> Applied Theory of Constraints methodology to identify and resolve bottlenecks, implemented comprehensive scrap management system, and redesigned production planning processes.</p>
+                        
+                        <p><strong>Results:</strong> Delivered significant improvements in EBITDA through enhanced productivity, waste reduction, and optimized manpower utilization while maintaining quality standards.</p>
                     </div>
-                    <div class="achievement">
-                        <strong>Cost Optimization:</strong> Delivered 2% cost savings through strategic procurement, energy optimization, and process improvements
-                    </div>
-                    <div class="achievement">
-                        <strong>Capability Building:</strong> Trained 200+ operations staff in Lean Six Sigma methodologies, generating ₹7 Cr+ in annual savings
-                    </div>
-                    <div class="achievement">
-                        <strong>Automation Excellence:</strong> Realized ₹13 Cr+ savings through low-cost automation and poka-yoke implementations
-                    </div>
-                </div>
-
-                <div class="company-highlight fade-in">
-                    <h3>Manjushree Technopack Ltd - Operations Excellence</h3>
-                    <div class="achievement">
-                        <strong>Strategic Partnership:</strong> Co-created 5-year operations roadmap with McKinsey, aligning manufacturing strategy with business goals
-                    </div>
-                    <div class="achievement">
-                        <strong>Productivity Enhancement:</strong> Achieved ₹16 Cr EBITDA improvement through manpower productivity optimization
-                    </div>
-                    <div class="achievement">
-                        <strong>Theory of Constraints:</strong> Increased manufacturing throughput by 8% through systematic bottleneck identification and resolution
-                    </div>
-                    <div class="achievement">
-                        <strong>Quality Leadership:</strong> Led scrap management initiative, reducing scrap by 300% through infrastructure and process improvements
+                    <div class="case-metrics">
+                        <div class="metric">
+                            <span class="metric-value">₹16 Cr</span>
+                            <div class="metric-label">EBITDA improvement</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">8%</span>
+                            <div class="metric-label">Throughput increase</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">300%</span>
+                            <div class="metric-label">Scrap reduction</div>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">10%</span>
+                            <div class="metric-label">Operating cost reduction</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -802,101 +656,99 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Ready to Transform Your Operations?</h2>
-            <p>Let's discuss how we can optimize your manufacturing and supply chain performance</p>
-            
-            <div class="contact-form fade-in">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" id="company" name="company" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="project">Project Details</label>
-                        <textarea id="project" name="project" rows="5" placeholder="Describe your operational challenges and objectives..."></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Schedule Consultation</button>
-                </form>
-            </div>
-            
-            <div style="margin-top: 3rem;">
-                <p><strong>Email:</strong> your.email@domain.com</p>
-                <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-                <p><strong>Location:</strong> Bengaluru, Karnataka, India</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Discuss Your Manufacturing Challenges</h2>
+                    <p>Ready to transform your operations? Let's explore how we can work together to achieve measurable improvements in efficiency, quality, and profitability.</p>
+                    
+                    <ul class="contact-details">
+                        <li><strong>Email:</strong> contact@humchumco.com</li>
+                        <li><strong>Phone:</strong> +91 XXXXX XXXXX</li>
+                        <li><strong>Location:</strong> Bengaluru, Karnataka</li>
+                        <li><strong>Response:</strong> Within 24 hours</li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" required placeholder="Company name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Briefly describe your operational challenges and objectives..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Operations Excellence Consulting. Transforming Manufacturing Through Lean Thinking & Digital Innovation.</p>
+            <p>&copy; 2025 HumchumCo. Manufacturing Excellence Through Strategic Operations Consulting.</p>
         </div>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+                    behavior: 'smooth',
+                    block: 'start'
                 });
             });
         });
         
-        // Fade in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-        
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-        
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-        
-        // Form submission handler
+        // Form handling
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your inquiry! We will get back to you within 24 hours.');
+            
+            // Basic form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const company = document.getElementById('company').value;
+            
+            if (name && email && company) {
+                alert('Thank you for your inquiry. We will respond within 24 hours.');
+                this.reset();
+            } else {
+                alert('Please fill in all required fields.');
+            }
         });
         
-        // Dynamic typing effect for hero section
-        const titles = [
-            "Transform Your Operations",
-            "Optimize Your Supply Chain", 
-            "Maximize Your Efficiency",
-            "Drive Digital Innovation"
-        ];
-        
-        let titleIndex = 0;
-        setInterval(() => {
-            titleIndex = (titleIndex + 1) % titles.length;
-            document.querySelector('.hero h1').style.opacity = '0';
-            setTimeout(() => {
-                document.querySelector('.hero h1').textContent = titles[titleIndex];
-                document.querySelector('.hero h1').style.opacity = '1';
-            }, 500);
-        }, 4000);
+        // Header scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            const header = document.querySelector('header');
+            
+            if (currentScroll > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = '#ffffff';
+                header.style.backdropFilter = 'none';
+            }
+            
+            lastScroll = currentScroll;
+        });
     </script>
 </body>
 </html>
